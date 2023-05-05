@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body
+{
+    overflow-x:hidden;
+}
+.quote {
+    padding: 5px 2px;
+    font-style: italic;
+    width: fit-content;
+}
+
+.quote-author {
+    font-style: normal;
+    font-weight: bold;
+}
+a
+{
+  text-decoration: none;
+  color:#424242;
+}
+ul
+{
+  list-style: none;
+}
+button,input
+{
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+header
+{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  color: #424242;
+  height: 10vh;
+  padding-right: 5px;
+}
+
+textarea
+{
+  resize: none;
+}
+
+.logo-block
+{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo
+{
+  height: 100%;
+  background-color: #00bcd4;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.logo a
+{
+  font-size:40px;
+  font-weight: bold;
+  color:#ffffff;
+}
+
+#logo-name
+{
+  font-weight: bold;
+  font-size: 35px;
+  color: #424242;
+  margin-left: 5px;
+}
+
+nav ul
+{
+  display: flex;
+  align-items: center;
+  gap:20px;
+}
+
+#nav-elem
+{
+  font-size:22px;
+  color: #424242;
+  
+}
+#nav-elem:hover
+{
+  color: #8BC34A;
+  transition: 0.1s ease-in-out;
+}
+
+.login-ul
+{
+  display: flex;
+  align-items: center;
+  gap:20px;
+}
+
+#login-element 
+{
+  background-color: #00bcd4;
+  border-radius: 10px;
+  padding: 4px;
+  font-size: 18px;;
+}
+
+#login-element:hover
+{
+  background-color: #8BC34A;
+  transition: 0.35s ease-in-out;
+}
+
+#login-element a,#login-element button
+{
+  color: #424242;
+  font-size: 18px;
+}
+main
+{
+  word-wrap:break-word;
+  padding-top:1vh;
+  padding-left: 1vw;
+  min-height: 81vh;
+  max-width:100vw;
+}
+.index-main-block
+{
+    position:absolute;
+    top:40%;
+    left:40%;
+}
+.write-blog
+{
+    margin-top:10px;
+    display:block;
+    border:2px solid black;
+    padding:2% 30%;
+}
+#login-form {
+    position: absolute;
+    top: calc(50% - 250px);
+    left: calc(50% - 250px);
+    width: 500px;
+    height: 500px;
+    background-color: #424242;
+    color: #ffffff;
+    padding-left: 80px;
+    padding-top: 75px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+#login-form input[type="submit"]
+{
+  border: none;
+  background-color: #8BC34A;
+  border-radius: 4px;
+  width: 80%;
+  height: 50px;
+  font-size: 20px;
+}
+.inputbox
+{
+  width: 80%;
+  border-bottom: 2px solid #8BC34A;
+  margin-top: 20px;
+}
+.inputbox ion-icon
+{
+  color: #8BC34A;
+}
+
+.inputbox input
+{
+  width: 400px;
+  font-size: 0.75em;
+  color: #fff;
+}
+
+#forgot
+{
+  margin-top: 5px;
+  font-size:15px;
+}
+
+#forgot a, #creat_eaccount a
+{
+  text-decoration: underline;
+}
+
+#remember_me
+{
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.log-in-block
+{
+  margin-top: 20px;
+}
+
+
+.input-field
+{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+
+#blog-block
+{
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+#blog-block textarea, #blog-block input
+{
+  font-size: 15px;
+}
+
+.labels-blog
+{
+  display: flex;
+  flex-direction: column;
+}
+
+#title-blog
+{
+  outline: 1px solid #424242;
+  width: 30%;
+}
+
+#title-blog:active, #title-blog:focus
+{
+  outline: 2px solid #424242;
+}
+
+.description-textarea
+{
+  width: 30%;
+}
+
+.block-body
+{
+  display: flex;
+  gap:20px;
+}
+
+.body-textarea
+{
+  width:500px;
+  height:500px;
+}
+
+#iframe-body
+{
+  width: 500px;
+  height: 500px;
+}
+
+#create-blog
+{
+  background-color: #00bcd4;
+  width:200px;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 200px;
+}
+
+.blogs
+{
+   display: flex;
+   flex-direction: column;
+   gap:20px;
+}
+
+footer{
+    position:absolute;
+    height: 8vh;
+}

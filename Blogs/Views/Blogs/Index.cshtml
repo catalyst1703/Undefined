@@ -1,0 +1,27 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    User user = await UserManager.GetUserAsync(User);
+}
+@model IEnumerable<Blog>
+@inject UserManager<User> UserManager
+
+<div class="blogs">
+    @foreach(Blog blog in Model)
+    {
+        <div class="blog">
+            <h2><a asp-action="Blog" asp-route-id="@blog.Id">@blog.Title</a></h2>
+            <p>@blog.Description</p>
+            @if((user is not null))
+            {
+                if (UserManager.IsInRoleAsync(user, "Admin").Result || blog.Author.Id == user.Id)
+                {
+                    <a asp-action="DeleteBlog" asp-route-id="@blog.Id">Delete</a>
+                }
+                
+            }
+        </div>
+    }
+</div>

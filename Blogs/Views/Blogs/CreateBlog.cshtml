@@ -1,0 +1,37 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model CreateBlogModel
+<form class="create-blog-block" asp-action = "CreateBlog" method="post" id="blog-block">
+    <div class="labels-blog">
+        <label>Title:</label>
+        <input id ="title-blog" asp-for="Title"/>
+        <label>Description:</label>
+        <textarea class="description-textarea" asp-for="Description"></textarea>
+        <label>Body:</label>
+    </div>
+    <div class="body-redactor">
+        <div class="block-body">
+            <textarea id = "body" class = "body-textarea" asp-for="Body"></textarea>
+            <iframe frameborder="0" id="iframe-body"></iframe>
+            
+        </div>
+        <div class="blog-tools">
+            <button type="button" id="bold">bold</button>
+            <button type="button" id="italic"><i>italic</i></button>
+            <button type="button" id="link">link</button>
+            <button type="button" id="quote">quote</button>
+            <button type="button" id="h1">h1</button>
+            <button type="button" id="h2">h2</button>
+            <button type="button" id="h3">h3</button>
+            <button type="button" id="h4">h4</button>
+            <button type="button" id="h5">h5</button>
+            <button type="button" id="h6">h6</button>
+            <input type="file"/>
+        </div>
+    </div>
+    <input id ="create-blog" type="submit" value="Create blog"/>
+</form>
+

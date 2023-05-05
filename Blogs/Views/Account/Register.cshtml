@@ -1,0 +1,42 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model RegisterInputModel
+
+<label for="">@Model.ErrorMessage</label>
+<form asp-action="Register" method="post" id="login-form">
+    <div class="inputbox">
+        <label for="">Username</label>
+        <div class="input-field">
+            <input asp-for="Username">
+            <ion-icon name="person-outline"></ion-icon>
+        </div>
+    </div>
+    <div class="inputbox">
+        <label for="">Email</label>
+        <div class="input-field">
+            <input asp-for="Email" type="email">
+            <ion-icon name="mail-outline"></ion-icon>
+        </div>
+    </div>
+    <div class="inputbox">
+        <label for="">Password</label>
+        <div class="input-field">
+            <input asp-for="Password" type="password">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+        </div>
+    </div>
+    <div class="inputbox">
+        <label for="">Confirm password</label>
+        <div class="input-field">
+            <input asp-for="PasswordAgain" type="password">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+        </div>
+    </div>
+    <div class="log-in-block">
+        <input type="submit" value="Log in">
+    </div>
+    
+</form>

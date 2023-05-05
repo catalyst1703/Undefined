@@ -1,0 +1,30 @@
+﻿@model LoginInputModel
+
+
+<label for="">@Model.ErrorMessage</label>
+<form asp-action="Login" method="post" id="login-form">
+    <div class="inputbox">
+        <label for="">Email</label>
+        <div class="input-field">
+            <input asp-for="Email" type="email">
+            <ion-icon name="mail-outline"></ion-icon>
+        </div>
+    </div>
+    <div class="inputbox">
+        <label for="">Password</label>
+        <div class="input-field">
+            <input asp-for="Password" type="password">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+        </div>
+    </div>
+    <p id="forgot">Forgot a password? <a>Reset him!</a></p>
+    <div id="remember_me">
+        <label>Remember me</label>
+        <input type="checkbox" asp-for="RememberMe">
+    </div>
+    <div class="log-in-block">
+        <input type="submit" value="Log in">
+        <p id="creat_eaccount">Don't have a account? <a>Get it!</a></p>
+    </div>
+    
+</form>
